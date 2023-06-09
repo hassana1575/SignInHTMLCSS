@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In and Sign Up Forms</title>
+	<style>
+        
+		body {
+			background-image: url('img.jpg');
+			background-size: cover;
+			background-position: center;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+		}
+		
+		form {
+            /* display: flex; */
+	        align-items: center;
+			max-width: 500px;
+			margin: 220px;
+			padding: 20px;
+            padding-right: 50px;
+			background-color: #f2f2f20a;
+			border-radius: 10px;
+		}
+		
+		input[type="text"], input[type="email"], input[type="password"] {
+			display: block;
+			margin: 10px 0;
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			width: 100%;
+			font-size: 1.2em;
+			line-height: 1.5em;
+		}
+		
+		input[type="submit"] {
+			background-color: #ffffff;
+			color: rgb(30, 31, 30);
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			font-size: 1.2em;
+			cursor: pointer;
+			margin-top: 10px;
+			
+			
+		}
+		input[type="text1"] {
+			/* display: flex; */
+			/* display: block; */
+			/* margin: 10px 0; */
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			width: 100%;
+			font-size: 1.2em;
+			line-height: 1.5em;
+			margin-right: 4px;
+		}
+
+		input[type="text2"] {
+			
+			/* display: block; */
+			
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			width: 100%;
+			font-size: 1.2em;
+			line-height: 1.5em;
+			margin-left: 4px;
+		}
+
+		.circle {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      /* background-color: #ccc; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .circle img {
+      max-width: 150%;
+      max-height: 90%;
+      border-radius: 60%;
+	  overflow: hidden;
+	  
+    }
+		
+		
+		/* .circle {
+  			width: 150px;
+ 			height: 150px;
+  			border-radius: 100%;
+  			overflow: hidden;
+  			align-items: center;
+  
+		}  */
+		.container {
+      display: flex;
+	  
+    }
+	</style>
+	
+</head>
+<body>
+	<form id="signup-form" >
+		<div  class="circle" >
+			<img src="img.jpg" >
+		</div>
+		<div class="container" >
+		<input style="background-color: #5b615b1c;"type="text1" name="fname" placeholder="First Name" required>
+		<input style="background-color: #5b615b1c;"type="text2" name="lname" placeholder="Last Name" required>
+		</div>
+		<div>
+		<input style="background-color: #5b615b1c;"type="text" name="uname" placeholder="User Name" required>
+		<input style="background-color: #5b615b1c;"type="email" name="email" placeholder="Email" required>
+
+		<input style="background-color: #5b615b1c;"type="password" name="password" placeholder="Password" required>
+		<textarea  style="width: 515px; background-color: rgba(91, 97, 91, 0.11); height: 104px;"  name="requirements" id="Requirements" maxlength="1000" cols="25" rows="6" placeholder="Enter Message"> </textarea>
+		<!-- <textarea style="width: 22%; background-color: #5b615b1c;" placeholder="Enter Message" name="requirements" id="Requirements" maxlength="1000" cols="25" rows="6" > </textarea> -->
+		<input type="submit" value="Sign Up">
+		</div>
+	</form>
+   
+	
+	
+</body>
+</html>
